@@ -1,2 +1,3 @@
-# powerful-jest
-Make jest powerful.
+# @zanminkian/powerful-jest
+
+Developing! Do not use it.
