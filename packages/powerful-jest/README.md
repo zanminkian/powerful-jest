@@ -1,3 +1,3 @@
 # @zanminkian/powerful-jest
 
-Developing! Do not use it.
+Developing. Do not use it.
