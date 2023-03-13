@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { getConfigs } = require('../src/cli')
+
+async function main() {
+  const configs = await getConfigs()
+  process.argv.push(...configs)
+
+  require('jest/bin/jest')
+}
+
+main()
