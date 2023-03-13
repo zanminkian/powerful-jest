@@ -1,0 +1,21 @@
+{
+  "name": "@zanminkian/powerful-jest",
+  "version": "0.0.1",
+  "description": "Make jest powerful.",
+  "author": "hellozmj@qq.com",
+  "license": "MIT",
+  "homepage": "https://github.com/zanminkian/powerful-jest",
+  "keywords": [
+    "testing",
+    "typescript",
+    "jest",
+    "easy-to-use",
+    "ts-jest"
+  ],
+  "exports": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "dependencies": {
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5"
+  }
+}
