@@ -34,7 +34,7 @@ export function add(arg1: number, arg2: number): number {
 
 4. Let's create a `add.spec.ts` file.
 ```typescript
-import { describe, beforeEach, it, expect, jest } from '@zanminkian/powerful-jest'
+import { describe, beforeEach, it, expect } from '@zanminkian/powerful-jest'
 import { add } from './add'
 
 describe('add', () => {
