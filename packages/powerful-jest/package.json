@@ -1,6 +1,6 @@
 {
   "name": "@zanminkian/powerful-jest",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Make jest powerful.",
   "author": "hellozmj@qq.com",
   "license": "MIT",
@@ -15,7 +15,11 @@
   "exports": "./src/index.js",
   "types": "./src/index.d.ts",
   "dependencies": {
+    "@jest/globals": "^29.5.0",
     "jest": "^29.5.0",
     "ts-jest": "^29.0.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }
