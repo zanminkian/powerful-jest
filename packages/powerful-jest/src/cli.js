@@ -23,7 +23,7 @@ exports.getConfigs = async function getConfigs() {
   const result = [
     ['transform', `{"^.+\\\\.tsx?$":"${await getTsJestPath()}"}`],
     ['passWithNoTests'],
-    ['collectCoverageFrom', '**/src/**/*.ts'],
+    ['collectCoverageFrom', '**/src/**/*.{(j|t)s,(j|t)sx}'],
   ].reduce(
     (res, cur) => (fileConfig[cur[0]] === undefined && cliConfig[cur[0]] === undefined) ? res.concat(`--${cur.join('=')}`) : res,
     [],
