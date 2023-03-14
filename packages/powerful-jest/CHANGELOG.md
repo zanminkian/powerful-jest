@@ -1,5 +1,11 @@
 # @zanminkian/powerful-jest
 
+## 0.1.3
+
+### Patch Changes
+
+- 47349d0: chore(powerful): revert #40858973
+
 ## 0.1.2
 
 ### Patch Changes
