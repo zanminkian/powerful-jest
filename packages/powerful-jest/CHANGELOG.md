@@ -1,5 +1,12 @@
 # @zanminkian/powerful-jest
 
+## 0.1.2
+
+### Patch Changes
+
+- 4085897: feat(powerful-jest): add peerDependencies as constraint
+- 94e283f: docs: add badge
+
 ## 0.1.1
 
 ### Patch Changes
