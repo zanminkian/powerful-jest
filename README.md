@@ -3,6 +3,7 @@
 [![](https://img.shields.io/npm/l/@zanminkian/powerful-jest.svg)](https://github.com/zanminkian/powerful-jest/blob/master/LICENSE)
 [![](https://img.shields.io/npm/v/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
 [![](https://img.shields.io/npm/dm/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
+[![](https://img.shields.io/librariesio/release/npm/@zanminkian/powerful-jest)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
 
 Make jest powerful.
 
@@ -34,7 +35,7 @@ export function add(arg1: number, arg2: number): number {
 
 4. Let's create a `add.spec.ts` file.
 ```typescript
-import { describe, beforeEach, it, expect, jest } from '@zanminkian/powerful-jest'
+import { describe, beforeEach, it, expect } from '@zanminkian/powerful-jest'
 import { add } from './add'
 
 describe('add', () => {
