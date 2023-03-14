@@ -17,6 +17,14 @@
   "bin": {
     "jest": "bin/jest"
   },
+  "peerDependencies": {
+    "typescript": ">=4.3"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
   "dependencies": {
     "@jest/globals": "^29.5.0",
     "cosmiconfig": "^8.1.0",
