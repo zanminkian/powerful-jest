@@ -1,5 +1,11 @@
 # @zanminkian/powerful-jest
 
+## 0.1.4
+
+### Patch Changes
+
+- 4e71d76: docs: add badge
+
 ## 0.1.3
 
 ### Patch Changes
