@@ -4,6 +4,7 @@
 [![](https://img.shields.io/npm/v/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
 [![](https://img.shields.io/npm/dm/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
 [![](https://img.shields.io/librariesio/release/npm/@zanminkian/powerful-jest)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
+[![](https://packagephobia.com/badge?p=@zanminkian/powerful-jest)](https://packagephobia.com/result?p=@zanminkian/powerful-jest)
 
 Make jest powerful.
 
