@@ -15,7 +15,7 @@
   "exports": "./src/index.js",
   "types": "./src/index.d.ts",
   "bin": {
-    "jest": "bin/jest"
+    "jest": "./bin/jest.js"
   },
   "dependencies": {
     "@jest/globals": "^29.5.0",
