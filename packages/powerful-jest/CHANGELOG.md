@@ -1,5 +1,12 @@
 # @zanminkian/powerful-jest
 
+## 0.1.5
+
+### Patch Changes
+
+- be4a09f: refactor(powerful-jest): ship to esm
+- 20b6954: refactor(powerful-jest): add js extension to bin file
+
 ## 0.1.4
 
 ### Patch Changes
