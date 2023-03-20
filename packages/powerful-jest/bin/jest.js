@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-const { getConfigs } = require('../src/cli')
+import { getConfigs } from '../src/cli.js'
 
 async function main() {
   const configs = await getConfigs()
   process.argv.push(...configs)
 
-  require('jest/bin/jest')
+  await import('jest/bin/jest')
 }
 
 main()

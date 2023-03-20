@@ -1,8 +1,11 @@
-const { join, resolve } = require('node:path')
-const { stat } = require('node:fs/promises')
-const { cosmiconfigSync } = require('cosmiconfig')
-const yargs = require('yargs/yargs')
-const { hideBin } = require('yargs/helpers')
+import { dirname, join, resolve } from 'node:path'
+import { stat } from 'node:fs/promises'
+import { fileURLToPath } from 'node:url'
+import { cosmiconfigSync } from 'cosmiconfig'
+import yargs from 'yargs/yargs'
+import { hideBin } from 'yargs/helpers'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 async function getTsJestPath(basePath = __dirname) {
   const result = resolve(basePath, 'node_modules/ts-jest')
@@ -14,7 +17,7 @@ async function getTsJestPath(basePath = __dirname) {
   return await getTsJestPath(resolve(basePath, '..'))
 }
 
-exports.getConfigs = async function getConfigs() {
+export async function getConfigs() {
   const { argv } = yargs(hideBin(process.argv))
   const cliConfig = argv instanceof Promise ? await argv : argv
   const configPath = cliConfig['config'] || cliConfig['c']

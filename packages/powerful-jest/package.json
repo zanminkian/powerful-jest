@@ -1,5 +1,6 @@
 {
   "name": "@zanminkian/powerful-jest",
+  "type": "module",
   "version": "0.1.4",
   "description": "Make jest powerful.",
   "author": "hellozmj@qq.com",
@@ -12,7 +13,7 @@
     "easy-to-use",
     "ts-jest"
   ],
-  "exports": "./src/index.js",
+  "exports": "./src/index.cjs",
   "types": "./src/index.d.ts",
   "bin": {
     "jest": "./bin/jest.js"
