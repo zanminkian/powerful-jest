@@ -1,5 +1,11 @@
 # @zanminkian/powerful-jest
 
+## 0.1.6
+
+### Patch Changes
+
+- 90e1fd9: fix(powerful-jest): rename `index.d.ts` to `index.d.cts`
+
 ## 0.1.5
 
 ### Patch Changes
