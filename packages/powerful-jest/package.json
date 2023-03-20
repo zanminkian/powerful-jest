@@ -13,8 +13,10 @@
     "easy-to-use",
     "ts-jest"
   ],
-  "exports": "./src/index.cjs",
-  "types": "./src/index.d.ts",
+  "exports": {
+    "default": "./src/index.cjs",
+    "types": "./src/index.d.cts"
+  },
   "bin": {
     "jest": "./bin/jest.js"
   },
