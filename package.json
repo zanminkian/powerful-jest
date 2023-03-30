@@ -3,7 +3,7 @@
   "workspaces": [
     "packages/*"
   ],
-  "packageManager": "pnpm@7.5.2",
+  "packageManager": "pnpm@7.30.5",
   "engines": {
     "pnpm": "^7.0.0",
     "node": ">=16.0.0"
