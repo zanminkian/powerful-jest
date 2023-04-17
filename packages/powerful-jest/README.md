@@ -1,22 +1,22 @@
 # @zanminkian/powerful-jest
 
-[![](https://img.shields.io/npm/l/@zanminkian/powerful-jest.svg)](https://github.com/zanminkian/powerful-jest/blob/master/LICENSE)
-[![](https://img.shields.io/npm/v/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
-[![](https://img.shields.io/npm/dm/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
-[![](https://img.shields.io/librariesio/release/npm/@zanminkian/powerful-jest)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
-[![](https://packagephobia.com/badge?p=@zanminkian/powerful-jest)](https://packagephobia.com/result?p=@zanminkian/powerful-jest)
+[![License](https://img.shields.io/npm/l/@zanminkian/powerful-jest.svg)](https://github.com/zanminkian/powerful-jest/blob/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
+[![Downloads](https://img.shields.io/npm/dm/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
+[![Dependencies](https://img.shields.io/librariesio/release/npm/@zanminkian/powerful-jest)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
+[![Size](https://packagephobia.com/badge?p=@zanminkian/powerful-jest)](https://packagephobia.com/result?p=@zanminkian/powerful-jest)
 
-Make jest powerful.
+Empower your Jest testing experience.
 
 ## Features
 
-- 100% compatible with [jest](https://jestjs.io/). Use `@zanminkian/powerful-jest` just like `jest`.
-- Support typescript out-of-box.
-- Reasonable defaults of best practices. Most of projects work pretty well in **zero configs**.
+- 100% compatible with [Jest](https://jestjs.io/). Use `@zanminkian/powerful-jest` just like you would use `jest`.
+- Out-of-the-box TypeScript support.
+- Sensible defaults adhering to best practices. Most projects work seamlessly with **zero configuration**.
 
 ## Usage
 
-1. Uninstall `jest`, `@types/jest` and `ts-jest` if your project has installed them.
+1. Uninstall `jest`, `@types/jest`, and `ts-jest` if they are already installed in your project.
 
 ```sh
 pnpm remove jest @types/jest ts-jest
@@ -27,21 +27,21 @@ pnpm remove jest @types/jest ts-jest
 pnpm add -D @zanminkian/powerful-jest
 ```
 
-3. Let's create a `add.ts` file.
+3. Create an `add.ts` file.
 ```typescript
 export function add(arg1: number, arg2: number): number {
   return arg1 + arg2
 }
 ```
 
-4. Let's create a `add.spec.ts` file.
+4. Create an `add.spec.ts` file.
 ```typescript
 import { describe, beforeEach, it, expect } from '@zanminkian/powerful-jest'
 import { add } from './add'
 
 describe('add', () => {
   beforeEach(() => {
-    // It will be executed before each case.
+    // This will be executed before each test case.
   })
 
   afterEach(() => {
@@ -54,19 +54,19 @@ describe('add', () => {
 })
 ```
 
-4. Run `pnpm jest` to test.
+5. Run `pnpm jest` to execute tests.
 
-## Configs
+## Configuration
 
-1. You can add more cli configs after `pnpm jest` command. For example, run `pnpm jest --coverage` to collect test coverage. Run `pnpm jest -h` for more cli options information.
-2. You can add a `jest.config.js` file on the root of your project. Check [Jest official doc](https://jestjs.io/docs/configuration) for more information.
+1. Add more CLI configurations after the `pnpm jest` command. For example, run `pnpm jest --coverage` to collect test coverage. Run `pnpm jest -h` for more CLI options information.
+2. Add a `jest.config.js` file in the root of your project. Consult the [official Jest documentation](https://jestjs.io/docs/configuration) for more information.
 
 ## How it works
 
-We will append some reasonable default cli options if you don't add them when you run `pnpm jest`.
-- `--transform='{"^.+\\\\.tsx?$":"ts-jest"}'`: This option transforms the typescript file, so that we can support typescript project without any other configs and installation.
-- `--passWithNoTests`: This option makes cli end without errors if there are no tests. You can override this default by `pnpm jest --passWithNoTests=false`.
-- `--collectCoverageFrom='**/src/**/*.{(j|t)s,(j|t)sx}'`: This option specifies where the test coverage is collected from. You can override it as you want: `pnpm jest --collectCoverageFrom='**/lib/**/*.js'`
+If you don't include CLI options when running `pnpm jest`, we will append some sensible defaults:
+- `--transform='{"^.+\\\\.tsx?$":"ts-jest"}'`: This option transforms TypeScript files, so you can support TypeScript projects without additional configurations or installations.
+- `--passWithNoTests`: This option prevents the CLI from producing errors if no tests are found. You can override this default by `pnpm jest --passWithNoTests=false`.
+- `--collectCoverageFrom='**/src/**/*.{(j|t)s,(j|t)sx}'`: This option specifies the location for collecting test coverage. Override it as needed: `pnpm jest --collectCoverageFrom='**/lib/**/*.js'`
 
 ## License
 
