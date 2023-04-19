@@ -14,11 +14,9 @@
     "ts-jest"
   ],
   "exports": {
-    "default": {
-      "require": "./src/index.cjs",
-      "import": "./src/index.js"
-    },
-    "types": "./src/index.d.ts"
+    "types": "./src/index.d.ts",
+    "require": "./src/index.cjs",
+    "default": "./src/index.js"
   },
   "bin": {
     "jest": "./bin/jest.js"
