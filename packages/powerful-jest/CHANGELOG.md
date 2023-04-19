@@ -1,5 +1,12 @@
 # @zanminkian/powerful-jest
 
+## 0.1.8
+
+### Patch Changes
+
+- 6e69375: fix(powerful-jest): fix module resolve problem
+- ced9fdf: docs: optimize readme by chatgpt
+
 ## 0.1.7
 
 ### Patch Changes
