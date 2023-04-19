@@ -1,5 +1,12 @@
 # @zanminkian/powerful-jest
 
+## 0.1.9
+
+### Patch Changes
+
+- 369e3a1: fix: add cts file
+- 7561080: refactor: clean package.json
+
 ## 0.1.8
 
 ### Patch Changes
