@@ -1,5 +1,11 @@
 # @zanminkian/powerful-jest
 
+## 0.1.10
+
+### Patch Changes
+
+- b38b012: fix: support resolving node10 (close #12)
+
 ## 0.1.9
 
 ### Patch Changes
