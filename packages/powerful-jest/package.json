@@ -14,10 +14,10 @@
     "ts-jest"
   ],
   "exports": {
-    "types": "./src/index.d.ts",
     "require": "./src/index.cjs",
     "default": "./src/index.js"
   },
+  "types": "./src/index.d.ts",
   "bin": {
     "jest": "./bin/jest.js"
   },
