@@ -1,6 +1,6 @@
 # @zanminkian/powerful-jest
 
-[![License](https://img.shields.io/npm/l/@zanminkian/powerful-jest.svg)](https://github.com/zanminkian/powerful-jest/blob/master/LICENSE)
+[![License](https://img.shields.io/npm/l/@zanminkian/powerful-jest.svg)](https://github.com/zanminkian/powerful-jest/blob/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
 [![Downloads](https://img.shields.io/npm/dm/@zanminkian/powerful-jest.svg)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
 [![Dependencies](https://img.shields.io/librariesio/release/npm/@zanminkian/powerful-jest)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
