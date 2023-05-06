@@ -27,6 +27,8 @@ export async function getConfigs() {
   const result = [
     ['transform', `{"^.+\\\\.tsx?$":"${await getTsJestPath()}"}`],
     ['passWithNoTests'],
+    // TODO: Maybe we should support `.cjs`, `mjs` and etc.
+    // ['collectCoverageFrom', '**/src/**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
     ['collectCoverageFrom', '**/src/**/*.{(j|t)s,(j|t)sx}'],
   ].reduce(
     (res, cur) => (fileConfig[cur[0]] === undefined && cliConfig[cur[0]] === undefined) ? res.concat(`--${cur.join('=')}`) : res,
