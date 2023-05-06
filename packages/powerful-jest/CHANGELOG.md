@@ -1,5 +1,11 @@
 # @zanminkian/powerful-jest
 
+## 0.1.11
+
+### Patch Changes
+
+- 90774e0: chore: upgrade deps
+
 ## 0.1.10
 
 ### Patch Changes
