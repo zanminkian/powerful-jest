@@ -1,5 +1,11 @@
 # @zanminkian/powerful-jest
 
+## 0.1.12
+
+### Patch Changes
+
+- 6eeba3d: feat: intergrate supertest
+
 ## 0.1.11
 
 ### Patch Changes
