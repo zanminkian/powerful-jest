@@ -14,6 +14,7 @@ import {
   xit,
   xtest,
 } from '@jest/globals'
+import supertest from 'supertest'
 
 export {
   expect,
@@ -29,6 +30,7 @@ export {
   beforeEach,
   afterEach,
   afterAll,
+  supertest,
 }
 
 declare global {
