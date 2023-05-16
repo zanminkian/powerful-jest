@@ -13,6 +13,7 @@ Empower your Jest testing experience.
 - 100% compatible with [Jest](https://jestjs.io/). Use `@zanminkian/powerful-jest` just like you would use `jest`.
 - Out-of-the-box TypeScript support.
 - Sensible defaults adhering to best practices. Most projects work seamlessly with **zero configuration**.
+- Integrated [supertest](https://www.npmjs.com/package/supertest) in it.
 
 ## Usage
 
@@ -27,19 +28,26 @@ pnpm remove jest @types/jest ts-jest
 pnpm add -D @zanminkian/powerful-jest
 ```
 
-3. Create an `add.ts` file.
+3. Create an `app.ts` file.
+
 ```typescript
-export function add(arg1: number, arg2: number): number {
-  return arg1 + arg2
-}
+import express from 'express'
+
+const app = express()
+app.use((req, res) => {
+  res.json({ hello: 'world' })
+})
+
+export default app
 ```
 
-4. Create an `add.spec.ts` file.
-```typescript
-import { describe, beforeEach, it, expect } from '@zanminkian/powerful-jest'
-import { add } from './add'
+4. Create an `app.spec.ts` file.
 
-describe('add', () => {
+```typescript
+import { describe, beforeEach, it, expect, supertest } from '@zanminkian/powerful-jest'
+import app from './app'
+
+describe('app', () => {
   beforeEach(() => {
     // This will be executed before each test case.
   })
@@ -48,8 +56,11 @@ describe('add', () => {
     jest.resetAllMocks()
   })
 
-  it('should return 2', () => {
-    expect(add(1, 1)).toBe(2)
+  it('should be 2', () => {
+    expect(1 + 1).toBe(2)
+  })
+  it('should success', () => {
+    supertest(app).get('/').expect({ hello: 'world' })
   })
 })
 ```
