@@ -6,6 +6,8 @@
 [![Dependencies](https://img.shields.io/librariesio/release/npm/@zanminkian/powerful-jest)](https://www.npmjs.com/package/@zanminkian/powerful-jest)
 [![Size](https://packagephobia.com/badge?p=@zanminkian/powerful-jest)](https://packagephobia.com/result?p=@zanminkian/powerful-jest)
 
+> `@zanminkian/powerful-jest` is now `typed-jest`. Use `typed-jest` instead.
+
 Empower your Jest testing experience.
 
 ## Features
